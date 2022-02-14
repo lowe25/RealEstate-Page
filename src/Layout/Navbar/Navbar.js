@@ -13,16 +13,16 @@ function Navbar() {
           <NavLink to="/" className="nav-link">
             <li>Home</li>
           </NavLink>
-          <NavLink to="/" className="nav-link">
+          <NavLink to="/about" className="nav-link">
             <li>About</li>
           </NavLink>
-          <NavLink to="/" className="nav-link">
+          <NavLink to="/properties" className="nav-link">
             <li>Properties</li>
           </NavLink>
-          <NavLink to="/" className="nav-link">
+          <NavLink to="/contacts" className="nav-link">
             <li>Contacts</li>
           </NavLink>
-          <NavLink to="/" className="nav-link">
+          <NavLink to="/buyersGuide" className="nav-link">
             <li>Buyers Guide</li>
           </NavLink>
         </ul>

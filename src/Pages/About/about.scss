@@ -1,0 +1,63 @@
+.about-container{
+    min-height: 100vh;
+    display: grid;
+    justify-content: center;
+    padding: 20px;
+}
+
+//About Section
+.about{
+    padding:30px 0 20px 0;
+    .about-comp{
+        line-height: 1.6;
+    }
+}
+
+//Mission Section
+.mission-v{
+    padding:30px 0 20px 0;
+    .missonV-list{
+        ul{
+            li{
+                padding: 10px;
+            }
+        }
+    }
+}
+
+//Core Values Section
+.core-values{
+    padding:20px 0 20px 0;
+    h1{
+        padding: 10px;
+    }
+ .values{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+ }
+    .box{
+        border: 1px solid black;
+        width: 300px;
+        padding: 20px;
+        .value{
+            text-align: center;
+            font-weight: bold;
+        }
+        p{
+            text-align: center;
+            line-height: 1.6;
+        }
+    }
+}
+
+//Awards Section
+.awards{
+    padding: 20px 0 20px 0;
+    .awards-con{
+        ul{
+            li{
+                padding:15px;
+            }
+        }
+    }
+}
