@@ -1,0 +1,46 @@
+.landing-container{
+    height:100vh;
+    background: url("/Assets/Images/landing.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.house-search{
+    height: 900px;
+    display:grid;
+    justify-content: center;
+    align-items: center;
+}
+.housebox{
+    border: 2px solid white;
+    min-height: 140px;
+    width: 800px;
+    padding:20px;
+    color:$txt-color-white;
+}
+.form{
+ display: flex;
+ justify-content: center;
+ gap: 20px;
+ padding-top: 10px;
+ .txt-loc,
+ .txt-price{
+     height: 35px;
+     width:250px;
+     border-radius: 6px;
+     border: none;
+ }
+ .txt-loc,
+ .txt-price::placeholder{
+     padding: 10px;
+ }
+ .btn-search{
+    height: 35px;
+    width:200px;
+    cursor: pointer;
+    background-color: $homebtn-color;
+    color:$txt-color-white;
+    border: none;
+    font-weight: bold;
+ }
+}
