@@ -4,6 +4,7 @@ import "./App.scss";
 
 //Layout
 import Navbar from "./Layout/Navbar/Navbar";
+import Footer from "./Layout/Footer/Footer";
 
 //Pages
 import Home from "./Pages/Homepage/Homepage";
@@ -23,6 +24,7 @@ function App() {
           <Route path="/properties" component={Properties} />
           <Route path="/buyersGuide" component={BuyersGuide} />
         </Switch>
+        <Footer />
       </BrowserRouter>
     </>
   );
