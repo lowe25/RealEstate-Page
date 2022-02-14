@@ -1,0 +1,17 @@
+//Assets
+@import "./Assets/Style/reset.scss";
+@import "./Assets/Style/fonts.scss";
+@import "./Assets//Style/color.scss";
+@import "./Assets/MediaQueries/mediaQueries.scss";
+
+//Layout
+@import "./Assets/Style/Navbar/navbar.scss";
+@import "./Layout/Footer/footer.scss";
+
+//Pages
+@import "./Pages/Homepage/homepage.scss";
+@import "./Pages/About/about.scss";
+@import "./Pages/BuyersGuide/buyersGuide.scss";
+@import "./Pages/HouseDescription/houseDescription.scss";
+@import "./Pages/Properties/properties.scss";
+@import "./Pages/Contacts/contacts.scss";

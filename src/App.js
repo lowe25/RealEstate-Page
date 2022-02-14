@@ -1,8 +1,16 @@
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+
 import './App.scss';
+
+//
+import Navbar from "./Layout/Navbar/Navbar";
 function App() {
   return (
   <>
-    <h1>Hello world</h1>
+  <BrowserRouter>
+  <Navbar />
+
+  </BrowserRouter>
   </>
   );
 }
