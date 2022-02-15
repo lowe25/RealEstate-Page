@@ -1,0 +1,46 @@
+.contact-container {
+  height: 100vh;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(2, auto);
+  gap: 160px;
+}
+
+.app-container{
+    height: 740px;
+    display: grid;
+    align-items: center;
+    h1{
+        padding-bottom: 14px;
+    }
+    .schedule-form {
+        .per-info,
+        .contact-info,
+        .msg-container,
+        .btn-con {
+          display: grid;
+          gap:15px;
+          padding: 5px;
+        }
+        .txt {
+          height: 30px;
+          width: 500px;
+        }
+        .btn-submit{
+            height: 35px;
+            width: 140px;
+            cursor: pointer;
+        }
+      }
+      
+}
+
+.company-contact {
+    height: 510px;
+    display: grid;
+    align-items: center;
+  h1,
+  p {
+    padding: 8px;
+  }
+}
