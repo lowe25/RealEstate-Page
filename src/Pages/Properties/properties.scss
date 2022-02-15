@@ -1,0 +1,30 @@
+.properties-container{
+    height:100vh;
+    .house-list{
+        height: 720px;
+        display: grid;
+        align-items: center;
+    }
+}
+
+.property-list{
+    display: grid;
+    justify-content: center;
+    .box-con{
+        align-items: center;
+        display: grid;
+        grid-template-columns: repeat(3,auto);
+        justify-content: center;
+        gap:20px;
+        padding-top: 20px;
+        .box{
+            .housePicture{
+                height:230px;
+                width: 350px;
+            }
+            .houseName{
+                padding: 5px;
+            }
+        }
+    }
+}
