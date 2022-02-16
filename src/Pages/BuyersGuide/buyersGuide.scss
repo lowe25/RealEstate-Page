@@ -1,17 +1,46 @@
 .buyers-container {
   min-height: 700px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
 }
-.box {
-    padding: 20px;
-  p {
-    text-align: center;
+//Section Buyer Steps
+.steps-container{
+ h1{
+   text-align: center;
+   padding: 20px;
+ }
+  .steps {
+    display: flex;
+    justify-content: center;
+    .box {
+      padding: 20px;
+      p {
+        text-align: center;
+        font-size: 14px;
+      }
+      .img-step {
+        height: 200px;
+        width: 300px;
+      }
+    }
   }
-  .img-step {
-    height: 200px;
-    width: 300px;
+}
+.buyers-btn {
+  display: grid;
+  justify-content: center;
+  .btn-sched {
+    cursor: pointer;
+  }
+}
+.buyers-process {
+  overflow-x: hidden;
+  .reservation,
+  .documents {
+    position: relative;
+    left: 6.2%;
+    padding: 10px;
+    ol,ul{
+      li{
+        margin: 15px;
+      }
+    }
   }
 }
