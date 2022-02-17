@@ -4,7 +4,7 @@ function House2() {
     <div className="houseDesc-container">
       <section className="house">
         <div className="img-div">
-          <img src={calgaryHouse} alt="Sioux House" className="house-img"></img>
+          <img src={calgaryHouse} alt="calgary House" className="house-img"></img>
         </div>
         <div className="house-description">
           <p>House Name: Calgary</p>

@@ -1,10 +1,10 @@
-import siouxHouse from "Assets/images/Mediterrian.jpg";
+import MediterrianHouse from "Assets/images/Mediterrian.jpg";
 function House4() {
   return (
     <div className="houseDesc-container">
       <section className="house">
         <div className="img-div">
-          <img src={siouxHouse} alt="Sioux House" className="house-img"></img>
+          <img src={MediterrianHouse} alt="Mediterrian House" className="house-img"></img>
         </div>
         <div className="house-description">
           <p>House Name: Mediterranean</p>
