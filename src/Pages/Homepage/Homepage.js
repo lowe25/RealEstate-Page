@@ -3,7 +3,7 @@ function Home() {
     <>
       <div className="landing-container">
         <section className="house-search">
-          <div className="housebox">
+          <div className="housebox-src">
             <h1>Search Your Dream House</h1>
             <form className="form">
               <input type="text" className="txt-loc" placeholder="Location"></input>

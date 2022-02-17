@@ -1,9 +1,9 @@
 .properties-container{
     height:100vh;
+    display: grid;
+    align-items: center;
     .house-list{
-        height: 720px;
-        display: grid;
-        align-items: center;
+        height: 720px;        
     }
 }
 
@@ -24,6 +24,13 @@
             }
             .houseName{
                 padding: 5px;
+            }
+            .btnView-con{
+                padding: 5px;
+                .btn-view{
+                    cursor: pointer;
+                    width:100px;
+                }
             }
         }
     }

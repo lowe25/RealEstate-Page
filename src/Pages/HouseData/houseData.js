@@ -6,6 +6,7 @@ import atlaticHouse from "Assets/images/atlantic.jpg";
 import stCloudHouse from "Assets/images/StCloud.jpg";
 export const houseData = [
     {
+        links:"/siouxHouse",
         imgHouse:siouxHouse,
         houseName:"Sioux",
         housePrice:"$5,000",
@@ -24,9 +25,10 @@ export const houseData = [
         feature6:"1 Garage"
     },
     {
+        links:"/calgaryHouse",
         imgHouse:calgaryHouse,
         houseName:"Calgary",
-        housePrice:"$5,000",
+        housePrice:"$6,000",
         floorArea:"166 sqm",
         lotArea:"143 sqm",
         //House Info
@@ -42,9 +44,10 @@ export const houseData = [
         feature6:"1 Garage"
     },
     {
+        links:"/idahoHouse",
         imgHouse:idahoHouse,
         houseName:"Idaho",
-        housePrice:"$5,000",
+        housePrice:"$10,000",
         floorArea:"166 sqm",
         lotArea:"143 sqm",
         //House Info
@@ -60,9 +63,10 @@ export const houseData = [
         feature6:"1 Garage"
     },
     {
+        links:"/mediterHouse",
         imgHouse:mediterHouse,
         houseName:"Mediterranean",
-        housePrice:"$5,000",
+        housePrice:"$9,000",
         floorArea:"166 sqm",
         lotArea:"143 sqm",
         //House Info
@@ -78,9 +82,10 @@ export const houseData = [
         feature6:"1 Garage"
     },
     {
+        links:"/atlanticHouse",
         imgHouse:atlaticHouse,
         houseName:"Atlantic",
-        housePrice:"$5,000",
+        housePrice:"$6,600",
         floorArea:"166 sqm",
         lotArea:"143 sqm",
         //House Info
@@ -96,9 +101,10 @@ export const houseData = [
         feature6:"1 Garage"
     },
     {
+        links:"/stCloudHouse",
         imgHouse:stCloudHouse,
         houseName:"St Cloud",
-        housePrice:"$5,000",
+        housePrice:"$3,000",
         floorArea:"166 sqm",
         lotArea:"143 sqm",
         //House Info
