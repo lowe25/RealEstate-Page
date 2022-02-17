@@ -11,7 +11,7 @@ $screen-sizes: (
   "screen-xl":1418px,
 );
 
-@mixin mobile-device1($screen) {
+@mixin mobile-device($screen) {
     @media(max-width: map-get($screen-sizes, $screen)){
         @content;
     }

@@ -7,8 +7,7 @@
 }
 .house-search{
     height: 900px;
-    display:grid;
-    justify-content: center;
+    @include grid-center;
     align-items: center;
 }
 .housebox-src{
@@ -19,8 +18,7 @@
     color:$txt-color-white;
 }
 .form{
- display: flex;
- justify-content: center;
+@include flex-center;
  gap: 20px;
  padding-top: 10px;
  .txt-loc,
