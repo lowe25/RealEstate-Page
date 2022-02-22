@@ -5,8 +5,11 @@ $screen-sizes: (
   "mobile-xx": 589px,
   "tablet-sm1": 590px,
   "tablet-sm": 768px,
+  "tablet-break":769px,
   "tablet-md": 1024px,
   "tablet-lg":1025px,
+  "tablet-lg1": 1030px,
+  "tablet-lg2":1124px,
   "screen-lg":1270px,
   "screen-xl":1418px,
 );
@@ -45,9 +48,11 @@ $screen-sizes: (
     }
 }
 
-@mixin screen-device-lg($screen1, $screen2) {
+@mixin screen-device-md($screen1, $screen2) {
     @media(min-width: map-get($screen-sizes, $screen1)) 
     and (max-width: map-get($screen-sizes, $screen2)){
         @content;
     }
 }
+
+

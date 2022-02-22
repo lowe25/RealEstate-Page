@@ -51,7 +51,7 @@ function About() {
         </section>
 
         <section className="mission-v">
-          <h1>Mission Vission</h1>
+          <h1>Mission Vision</h1>
           <p>
             We shall be the best provider of residential communities designed to
             create quality lifestyle responsive to the changing needs and

@@ -43,7 +43,8 @@
   }
 }
 
-/*Media Queries Phone*/
+/*Media Queries*/
+/*Media Queries Phone 480*/
 @include mobile-device(mobile-md) {
   .housebox-src {
     width: 350px;
@@ -57,3 +58,26 @@
     }
   }
 }
+
+/*Media Queries Phone 481 - 768*/
+@include mobile-device-md(mobile-lg, tablet-sm){
+  .housebox-src {
+    width: 450px;
+  }
+  .form {
+    flex-direction: column;
+    .txt-loc,
+    .txt-price,
+    .btn-search{
+        width: 100%;
+    }
+  }
+}
+
+/*Media Queries Tablet 769 - 820*/
+@include tablet-device-lg(tablet-break, tablet-md){
+  .housebox-src {
+    width: 590px;
+  }
+}
+

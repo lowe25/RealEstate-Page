@@ -1,63 +1,191 @@
-.about-container{
-    min-height: 100vh;
-    display: grid;
-    justify-content: center;
-    padding: 20px;
+.about-container {
+  min-height: 100vh;
+  display: grid;
+  justify-content: center;
+  padding: 20px;
+  line-height: 1.6;
 }
 
 //About Section
-.about{
-    padding:30px 0 20px 0;
-    .about-comp{
-        line-height: 1.6;
-    }
+.about {
+  padding: 30px 0 20px 0;
+  .about-comp {
+    line-height: 1.6;
+  }
 }
 
 //Mission Section
-.mission-v{
-    padding:30px 0 20px 0;
-    .missonV-list{
-        ul{
-            li{
-                padding: 10px;
-            }
-        }
+.mission-v {
+  padding: 30px 0 20px 0;
+  .missonV-list {
+    ul {
+      li {
+        padding: 10px;
+      }
     }
+  }
 }
 
 //Core Values Section
-.core-values{
-    padding:20px 0 20px 0;
-    h1{
-        padding: 10px;
-    }
- .values{
+.core-values {
+  padding: 20px 0 20px 0;
+  h1 {
+    padding: 10px;
+  }
+  .values {
     display: grid;
-    grid-template-columns: repeat(3,auto);
- }
-    .box{
-        border: 1px solid black;
-        width: 300px;
-        padding: 20px;
-        .value{
-            text-align: center;
-            font-weight: bold;
-        }
-        p{
-            text-align: center;
-            line-height: 1.6;
-        }
+    grid-template-columns: repeat(3, auto);
+  }
+  .box {
+    border: 1px solid black;
+    width: 300px;
+    padding: 20px;
+    .value {
+      text-align: center;
+      font-weight: bold;
     }
+    p {
+      text-align: center;
+      line-height: 1.6;
+    }
+  }
 }
 
 //Awards Section
-.awards{
-    padding: 20px 0 20px 0;
-    .awards-con{
-        ul{
-            li{
-                padding:15px;
-            }
-        }
+.awards {
+  padding: 20px 0 20px 0;
+  .awards-con {
+    ul {
+      li {
+        padding: 15px;
+      }
     }
+  }
 }
+
+//Mobile 480
+@include mobile-device(mobile-md) {
+  //Mission Section
+  .mission-v {
+    padding: 30px 0 20px 0;
+    .missonV-list {
+      padding: 20px;
+      ul {
+        li {
+          padding: 10px;
+        }
+      }
+    }
+  }
+
+  //Awards Section
+  .awards {
+    padding: 25px;
+  }
+
+  //Core Values Section
+  .core-values {
+    .values {
+      justify-content: center;
+      grid-template-columns: repeat(1, auto);
+      gap: 20px;
+    }
+  }
+}
+
+//Mobile 481 - 768
+@include mobile-device-sm(mobile-lg, tablet-sm) {
+  //Mission Section
+  .mission-v {
+    padding: 30px 0 20px 0;
+    .missonV-list {
+      padding: 20px;
+      ul {
+        li {
+          padding: 10px;
+        }
+      }
+    }
+  }
+
+  //Awards Section
+  .awards {
+    .awards-con {
+        padding: 25px;
+    }
+  }
+
+  //Core Values Section
+  .core-values {
+    .values {
+      justify-content: center;
+      grid-template-columns: repeat(1, auto);
+      gap: 20px;
+    }
+    .box {
+      width: 400px;
+    }
+  }
+}
+
+//Tablet 768 - 1024
+@include tablet-device-sm(tablet-break, tablet-md) {
+  //Mission Section
+  .mission-v {
+    padding: 30px 0 20px 0;
+    .missonV-list {
+      padding: 20px;
+      ul {
+        li {
+          padding: 10px;
+        }
+      }
+    }
+  }
+
+  //Awards Section
+  .awards {
+    padding: 25px;
+  }
+
+  //Core Values Section
+  .core-values {
+    .values {
+      justify-content: center;
+      grid-template-columns: repeat(1, auto);
+      gap: 20px;
+    }
+    .box {
+      width: 500px;
+      padding: 30px;
+    }
+  }
+}
+
+//Tablet 1031 - 1024
+@include tablet-device-lg(tablet-lg1, tablet-lg2) {
+  //Mission Section
+  .mission-v {
+    .missonV-list {
+      padding: 20px;
+      ul {
+        li {
+          padding: 10px;
+        }
+      }
+    }
+  }
+  
+  //Awards Section
+.awards {
+    .awards-con {
+        padding: 20px;
+      ul {
+        li {
+          padding: 15px;
+        }
+      }
+    }
+  }
+}
+
