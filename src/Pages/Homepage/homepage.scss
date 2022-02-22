@@ -1,44 +1,59 @@
-.landing-container{
-    height:100vh;
-    background: url("/Assets/images/landing.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+.landing-container {
+  min-height: 100vh;
+  background: url("/Assets/images/landing.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
-.house-search{
-    height: 900px;
-    @include grid-center;
-    align-items: center;
+.house-search {
+  height: 900px;
+  @include grid-center;
+  align-items: center;
 }
-.housebox-src{
-    border: 2px solid white;
-    min-height: 140px;
-    width: 800px;
-    padding:20px;
-    color:$txt-color-white;
+.housebox-src {
+  border: 2px solid white;
+  min-height: 140px;
+  width: 800px;
+  padding: 20px;
+  color: $txt-color-white;
 }
-.form{
-@include flex-center;
- gap: 20px;
- padding-top: 10px;
- .txt-loc,
- .txt-price{
-     height: 35px;
-     width:250px;
-     border-radius: 6px;
-     border: none;
- }
- .txt-loc,
- .txt-price::placeholder{
-     padding: 10px;
- }
- .btn-search{
+.form {
+  @include flex-center;
+  gap: 20px;
+  padding-top: 10px;
+  .txt-loc,
+  .txt-price {
     height: 35px;
-    width:200px;
+    width: 250px;
+    border-radius: 6px;
+    border: none;
+  }
+  .txt-loc,
+  .txt-price::placeholder {
+    padding: 10px;
+  }
+  .btn-search {
+    height: 35px;
+    width: 200px;
     cursor: pointer;
     background-color: $homebtn-color;
-    color:$txt-color-white;
+    color: $txt-color-white;
     border: none;
     font-weight: bold;
- }
+  }
+}
+
+/*Media Queries Phone*/
+@include mobile-device(mobile-md) {
+  .housebox-src {
+    width: 350px;
+  }
+  .form {
+    flex-direction: column;
+    .txt-loc,
+    .txt-price,
+    .btn-search{
+        width: 100%;
+    }
+  }
 }
