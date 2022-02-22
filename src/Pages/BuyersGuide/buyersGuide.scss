@@ -8,7 +8,8 @@
    padding: 20px;
  }
   .steps {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(5,auto);
     justify-content: center;
     .box {
       padding: 20px;
@@ -44,3 +45,107 @@
     }
   }
 }
+
+
+//Media Querie Mobile 
+//Mobile 480
+@include mobile-device(mobile-md){
+//Section Buyer Steps
+.steps-container{
+   .steps {
+     grid-template-columns: repeat(1,auto);
+     .box {
+       padding: 20px;
+       p {
+         text-align: center;
+         font-size: 14px;
+       }
+       .img-step {
+         height: 200px;
+         width: 300px;
+       }
+     }
+   }
+ }
+}
+
+//Mobile 481
+@include mobile-device-sm(mobile-lg, tablet-sm){
+  .steps-container{
+    .steps {
+      grid-template-columns: repeat(1,auto);
+      .box {
+        padding: 20px;
+        p {
+          text-align: center;
+          font-size: 14px;
+        }
+        .img-step {
+          height: 200px;
+          width: 300px;
+        }
+      }
+    }
+  }
+}
+
+//Tablet 768 - 1024
+@include tablet-device-sm(tablet-sm, tablet-md){
+  .steps-container{
+    .steps {
+      grid-template-columns: repeat(2,auto);
+      .box {
+        padding: 20px;
+        p {
+          text-align: center;
+          font-size: 14px;
+        }
+        .img-step {
+          height: 200px;
+          width: 300px;
+        }
+      }
+    }
+  }
+}
+
+//Tablet 1025 - 1418
+@include tablet-device-md(tablet-lg, screen-xl){
+  .steps-container{
+    .steps {
+      grid-template-columns: repeat(2,auto);
+      .box {
+        padding: 20px;
+        p {
+          text-align: center;
+          font-size: 14px;
+        }
+        .img-step {
+          height: 200px;
+          width: 300px;
+        }
+      }
+    }
+  }
+}
+
+@include screen-device-lg(screen-xl, screen-xxl){
+  .steps-container{
+    .steps {
+      grid-template-columns: repeat(3,auto);
+      .box {
+        padding: 20px;
+        p {
+          text-align: center;
+          font-size: 14px;
+        }
+        .img-step {
+          height: 200px;
+          width: 300px;
+        }
+      }
+    }
+  }
+}
+
+

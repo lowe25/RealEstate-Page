@@ -12,6 +12,7 @@ $screen-sizes: (
   "tablet-lg2":1124px,
   "screen-lg":1270px,
   "screen-xl":1418px,
+  "screen-xxl":1743px
 );
 
 @mixin mobile-device($screen) {
@@ -41,6 +42,13 @@ $screen-sizes: (
     }
 }
 
+@mixin tablet-device-md($screen1, $screen2) {
+    @media(min-width: map-get($screen-sizes, $screen1)) 
+    and (max-width: map-get($screen-sizes, $screen2)){
+        @content;
+    }
+}
+
 @mixin tablet-device-lg($screen1, $screen2) {
     @media(min-width: map-get($screen-sizes, $screen1)) 
     and (max-width: map-get($screen-sizes, $screen2)){
@@ -54,5 +62,15 @@ $screen-sizes: (
         @content;
     }
 }
+
+
+@mixin screen-device-lg($screen1, $screen2) {
+    @media(min-width: map-get($screen-sizes, $screen1)) 
+    and (max-width: map-get($screen-sizes, $screen2)){
+        @content;
+    }
+}
+
+
 
 
