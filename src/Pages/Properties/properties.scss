@@ -1,37 +1,74 @@
-.properties-container{
-    height:100vh;
-    display: grid;
-    align-items: center;
-    .house-list{
-        height: 720px;        
-    }
+.properties-container {
+  height: 100vh;
+  display: grid;
+  align-items: center;
+  .house-list {
+    height: 720px;
+  }
 }
 
-.property-list{
+.property-list {
+  display: grid;
+  justify-content: center;
+  .box-con {
+    align-items: center;
     display: grid;
+    grid-template-columns: repeat(3, auto);
     justify-content: center;
-    .box-con{
-        align-items: center;
-        display: grid;
-        grid-template-columns: repeat(3,auto);
-        justify-content: center;
-        gap:20px;
-        padding-top: 20px;
-        .box{
-            .housePicture{
-                height:230px;
-                width: 350px;
-            }
-            .houseName{
-                padding: 5px;
-            }
-            .btnView-con{
-                padding: 5px;
-                .btn-view{
-                    cursor: pointer;
-                    width:100px;
-                }
-            }
+    gap: 20px;
+    padding-top: 20px;
+    .box {
+      .housePicture {
+        height: 230px;
+        width: 350px;
+      }
+      .houseName {
+        padding: 5px;
+      }
+      .btnView-con {
+        padding: 5px;
+        .btn-view {
+          cursor: pointer;
+          width: 100px;
         }
+      }
     }
+  }
+}
+
+//Media Queries Mobile
+//Mobile 480
+@include mobile-device(mobile-md) {
+  .property-list {
+    .box-con {
+      grid-template-columns: repeat(1, auto);
+    }
+  }
+}
+
+//Mobile 481 - 768
+@include mobile-device-sm(mobile-lg, tablet-sm) {
+  .property-list {
+    .box-con {
+      grid-template-columns: repeat(1, auto);
+    }
+  }
+}
+
+//Media Queries Tablet
+//Tablet 768 - 1024
+@include tablet-device-sm(tablet-sm, tablet-md) {
+  .property-list {
+    .box-con {
+      grid-template-columns: repeat(1, auto);
+    }
+  }
+}
+
+@include tablet-device-lg(tablet-lg,tablet-lg2){
+    .property-list {
+        .box-con {
+          grid-template-columns: repeat(2, auto);
+        }
+      }
 }
