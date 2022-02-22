@@ -34,7 +34,6 @@
       }
       
 }
-
 .company-contact {
     height: 510px;
     display: grid;
@@ -42,5 +41,69 @@
   h1,
   p {
     padding: 8px;
+  }
+}
+
+//Media Queries
+//Mobile 480
+@include mobile-device(mobile-md){
+  .contact-container{
+    padding: 10px;
+    grid-template-columns: repeat(1,auto);
+    gap: 0;
+  }
+  .app-container{
+    height: 500px;
+   .schedule-form{
+     .txt{
+       width: 100%;
+     }
+   } 
+  }
+
+  .company-contact{
+    height: 0;
+  }
+}
+
+//Mobile 481 - 768
+@include mobile-device-sm(mobile-lg, tablet-sm){
+  .contact-container{
+    padding: 10px;
+    grid-template-columns: repeat(1,auto);
+    gap: 0;
+  }
+  .app-container{
+    height: 500px;
+   .schedule-form{
+     .txt{
+       width: 100%;
+     }
+   } 
+  }
+
+  .company-contact{
+    height: 0;
+  }
+}
+
+//Tablet 768 - 1024
+@include tablet-device-sm(tablet-break, tablet-md){
+  .contact-container{
+    padding: 20px;
+    grid-template-columns: repeat(1,auto);
+    gap: 0;
+  }
+  .app-container{
+    height: 500px;
+   .schedule-form{
+     .txt{
+       width: 100%;
+     }
+   } 
+  }
+
+  .company-contact{
+    height: 0;
   }
 }
