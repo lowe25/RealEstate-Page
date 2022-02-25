@@ -1,3 +1,5 @@
+//Router
+import {Link} from "react-router-dom";
 import step1 from "Assets/images/contract2.jpg";
 import step2 from "Assets/images/realtor.jpg";
 import step3 from "Assets/images/contract2.jpg";
@@ -44,9 +46,11 @@ function BuyersGuide() {
         </div>
       </section>
       <div className="buyers-btn">
+        <Link to="/contacts">
         <button type="button" className="btn-sched" value="Search">
           Schedule Appointment
         </button>
+        </Link>
       </div>
       {/** */}
       <div className="buyers-process">

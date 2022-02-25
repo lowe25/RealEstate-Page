@@ -1,3 +1,4 @@
+import {Link} from "react-router-dom";
 import React, { useState } from "react";
 import { data } from "./FooterData";
 function Footer() {
@@ -39,9 +40,13 @@ function Footer() {
                     className={selected === index ? "content show" : "content"}
                   >
                     <ul>
+               
                       <li>{items.list1}</li>
+                
                       <li>{items.list2}</li>
+              
                       <li>{items.list3}</li>
+         
                     </ul>
                   </div>
                 </div>

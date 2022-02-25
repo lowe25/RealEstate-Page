@@ -31,6 +31,9 @@
             height: 35px;
             width: 140px;
             cursor: pointer;
+            background-color: $buyerguide-btn;
+            color: $txt-color-white;
+            border: none;
         }
       }
       
@@ -46,7 +49,6 @@
 }
 
 //Media Queries
-
 //Mobile 320
 @include mobile-device-xs(mobile-xs){
   .contact-container{

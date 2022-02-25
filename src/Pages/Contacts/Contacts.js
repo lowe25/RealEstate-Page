@@ -17,7 +17,7 @@ function Contact() {
                 <label htmlFor="contnum">Contact Number:</label>
                 <input type="text" className="txt" id="contnum"></input>
                 <label htmlFor="email">Email Address:</label>
-                <input type="text" className="txt" id="email"></input>
+                <input type="email" className="txt" id="email"></input>
               </div>
 
               <div className="msg-container">

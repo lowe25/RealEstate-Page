@@ -14,7 +14,7 @@ function About() {
               booming sector. Starting in 1990 with properties in the growth
               corridor south of Metro Manila
               <br />
-              Ayala Land’s new division was called Laguna Properties Holdings
+              Richmond Properties new division was called Laguna Properties Holdings
               Inc. With LPHI, the company again redefined the property market by
               offering a new range
               <br />
@@ -24,7 +24,7 @@ function About() {
               toward property ownership for a new generation of Filipinos.
               Taking on a name that embodied a new purpose – “Ave” meaning
               ““Celebrate” and “Vida” meaning <br />
-              “Life” <br />– LPHI became Avida Land Corp. in 2006. Starting from
+              “Life” <br />– LPHI became Richmond Properties Land Corp. in 2006. Starting from
               its developments in Laguna, the company extended its reach to
               other. <br />
               areas and continued to reinvent the real estate segment with its
@@ -32,14 +32,14 @@ function About() {
               middle-income Filipinos. <br />
               Serving the need of the Filipino families for a sure, secure, and
               sensible home where they can celebrate life every day is what
-              Avida is all about. <br />
+              Richmond Properties is all about. <br />
               With over 60,000 homes built nationwide and almost 30 years of
               experience in developing and enriching communities, Avida has
               become a springboard for <br />
               creating life’s possibilities and opportunities with its expanding
               portfolio from land and house, condominiums to offices, and
               integrated mixed-use communities. <br />
-              More than just the basics, Avida provides lifestyle essentials:
+              More than just the basics, Richmond Properties provides lifestyle essentials:
               quality and intuitive designs that are built to enrich people’s
               lives. <br />
               Believing that inspired living means happier living, it is the

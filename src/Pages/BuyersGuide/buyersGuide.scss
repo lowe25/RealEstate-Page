@@ -30,6 +30,11 @@
   justify-content: center;
   .btn-sched {
     cursor: pointer;
+    height: 40px;
+    width: 200px;
+    background-color: $buyerguide-btn;
+    border: none;
+    color: $txt-color-white;
   }
 }
 .buyers-process {
