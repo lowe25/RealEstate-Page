@@ -11,7 +11,7 @@ function Properties() {
             <div className="box-con">
               {houseData.map((item, index) => {
                 return (
-                  <>
+                  <div key={index}>
                     <div className="box">
                       <img
                         src={item.imgHouse}
@@ -28,7 +28,7 @@ function Properties() {
                       </Link> 
                       </div>
                     </div>
-                  </>
+                  </div>
                 );
               })}
             </div>

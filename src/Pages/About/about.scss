@@ -65,8 +65,37 @@
 
 
 //Media Queries 
+//Mobile 320
+@include mobile-device-xs(mobile-xs){
+ //Mission Section
+ .mission-v {
+  padding: 30px 0 20px 0;
+  .missonV-list {
+    padding: 20px;
+    ul {
+      li {
+        padding: 10px;
+      }
+    }
+  }
+}
+
+//Awards Section
+.awards {
+  padding: 25px;
+}
+
+//Core Values Section
+.core-values {
+  .values {
+    justify-content: center;
+    grid-template-columns: repeat(1, auto);
+    gap: 20px;
+  }
+}
+}
 //Mobile 480
-@include mobile-device(mobile-md) {
+@include mobile-device-sm(mobile-xsBreak, mobile-md) {
   //Mission Section
   .mission-v {
     padding: 30px 0 20px 0;
@@ -96,7 +125,7 @@
 }
 
 //Mobile 481 - 768
-@include mobile-device-sm(mobile-lg, tablet-sm) {
+@include mobile-device-md(mobile-lg, tablet-sm) {
   //Mission Section
   .mission-v {
     padding: 30px 0 20px 0;
@@ -190,4 +219,3 @@
     }
   }
 }
-

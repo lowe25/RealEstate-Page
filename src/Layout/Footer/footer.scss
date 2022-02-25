@@ -1,6 +1,6 @@
-footer {
+.footer {
   min-height: 240px;
-  background-color: crimson;
+  background-color: $navBg-color;
   color: white;
   display: flex;
   justify-content: space-around;
@@ -21,6 +21,13 @@ footer {
       }
     }
   }
+}
+.rights {
+  height: 40px;
+  background-color: $navBg-color;
+  color: $txt-color-white;
+  text-align: center;
+  border: none;
 }
 .accordion {
   display: flex;
@@ -43,9 +50,63 @@ footer {
   }
 }
 
-//Mobiile
-@media (max-width: 480px) {
-  footer {
+//Mixins
+//For Footer
+@mixin responsive-footer-mobile-xs {
+  .footer {
+    justify-content: center;
+    flex-direction: column;
+    .comp-about {
+      text-align: center;
+      justify-content: center;
+      padding: 20px;
+     p{
+       text-align: center;
+       font-size: 15px;
+       width: 250px;
+       line-height: 1.6;
+       padding: 20px;
+     }
+    }
+  }
+  .list {
+    padding: 20px;
+  }
+  .accordion {
+    flex-direction: column;
+  }
+  .title {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    width: 250px;
+    padding: 5px;
+    span {
+      display: block;
+      color: white;
+      font-size: 30px;
+    }
+  }
+  .content {
+    max-height: 0;
+    overflow: hidden;
+    ul {
+      li {
+        list-style: none;
+      }
+    }
+  }
+  .content.show {
+    height: auto;
+    max-height: 9999px;
+  }
+  .rights{
+    display: none;
+  }
+}
+
+@mixin responsive-footer-mobile {
+  .footer {
     justify-content: center;
     flex-direction: column;
     .comp-about {
@@ -87,4 +148,65 @@ footer {
     height: auto;
     max-height: 9999px;
   }
+}
+//For Footer
+@mixin responsive-footer-tablet {
+  .footer {
+    justify-content: center;
+    flex-direction: column;
+    .comp-about {
+      text-align: center;
+      justify-content: center;
+      line-height: 1.6;
+      padding: 20px;
+    }
+  }
+
+  .list {
+    padding: 20px;
+  }
+  .accordion {
+    flex-direction: column;
+  }
+  .title {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    width: 700px;
+    padding: 5px;
+    span {
+      display: block;
+      color: white;
+      font-size: 30px;
+    }
+  }
+  .content {
+    max-height: 0;
+    overflow: hidden;
+    ul {
+      li {
+        list-style: none;
+      }
+    }
+  }
+  .content.show {
+    height: auto;
+    max-height: 9999px;
+  }
+}
+
+//Mobile
+//320
+@include mobile-device-xs(mobile-xs) {
+  @include responsive-footer-mobile-xs;
+}
+
+//321 - 480
+@include mobile-device-sm(mobile-xsBreak, mobile-md) {
+  @include responsive-footer-mobile;
+}
+
+//Tablet
+@include tablet-device-sm(tablet-sm, tablet-md) {
+  @include responsive-footer-tablet;
 }

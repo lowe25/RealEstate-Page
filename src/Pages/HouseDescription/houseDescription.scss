@@ -98,8 +98,36 @@
 }
 
 //Media Queries
+//Mobile 320
+@include mobile-device-xs(mobile-xs){
+  .housebox {
+    width: 250px;
+  }
+  .houseDesc-container {
+    justify-content: center;
+  }
+  .house {
+    flex-direction: column;
+    padding: 20px;
+    .img-div {
+      .house-img {
+        height: 302px;
+        width: 250px;
+      }
+    }
+  }
+
+  //Features Section
+  .house-features {
+    .features {
+      table {
+        width: 250px;
+      }
+    }
+  }
+}
 //Mobile 480
-@include mobile-device(mobile-md) {
+@include mobile-device-sm(mobile-xsBreak, mobile-md) {
   .housebox {
     width: 320px;
   }
@@ -128,7 +156,7 @@
 }
 
 //Mobile 481
-@include mobile-device-sm(mobile-lg, tablet-sm){
+@include mobile-device-md(mobile-lg, tablet-sm){
   .housebox {
     width: 420px;
   }

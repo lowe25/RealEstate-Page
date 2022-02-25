@@ -7,21 +7,21 @@ function Contact() {
           <h1>Schedule an Appointment</h1>
             <div className="schedule-form">
               <div className="per-info">
-                <label for="fname">Firstname:</label>
+                <label htmlFor="fname">Firstname:</label>
                 <input type="text" className="txt" id="fname"></input>
-                <label for="lname">Lastname:</label>
+                <label htmlFor="lname">Lastname:</label>
                 <input type="text" className="txt" id="lname"></input>
               </div>
 
               <div className="contact-info">
-                <label for="contnum">Contact Number:</label>
+                <label htmlFor="contnum">Contact Number:</label>
                 <input type="text" className="txt" id="contnum"></input>
-                <label for="email">Email Address:</label>
+                <label htmlFor="email">Email Address:</label>
                 <input type="text" className="txt" id="email"></input>
               </div>
 
               <div className="msg-container">
-                <label for="txt-msg">Message</label>
+                <label htmlFor="txt-msg">Message</label>
                 <textarea name="" id="txt-msg" cols="60" rows="10"></textarea>
               </div>
 

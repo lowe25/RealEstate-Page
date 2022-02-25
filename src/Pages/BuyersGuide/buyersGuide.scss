@@ -48,9 +48,34 @@
 
 
 //Media Querie Mobile 
+//Mobile 320
+@include mobile-device-xs(mobile-xs){
+  .steps-container{
+    .steps {
+      grid-template-columns: repeat(1,auto);
+      .box {
+        padding: 20px;
+        p {
+          text-align: center;
+          font-size: 14px;
+        }
+        .img-step {
+          height: 200px;
+          width: 270px;
+        }
+      }
+    }
+  }
+
+  //Buyers Process
+  .buyers-process{
+    padding: 20px;
+  }
+
+}
 //Mobile 480
-@include mobile-device(mobile-md){
-//Section Buyer Steps
+@include mobile-device-sm(mobile-xsBreak, mobile-md) {
+  //Section Buyer Steps
 .steps-container{
    .steps {
      grid-template-columns: repeat(1,auto);
@@ -70,7 +95,7 @@
 }
 
 //Mobile 481
-@include mobile-device-sm(mobile-lg, tablet-sm){
+@include mobile-device-md(mobile-lg, tablet-sm){
   .steps-container{
     .steps {
       grid-template-columns: repeat(1,auto);

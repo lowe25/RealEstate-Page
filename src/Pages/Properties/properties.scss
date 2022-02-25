@@ -1,9 +1,9 @@
 .properties-container {
-  height: 100vh;
+  min-height: 100vh;
   display: grid;
   align-items: center;
   .house-list {
-    height: 720px;
+    min-height: 720px;
   }
 }
 
@@ -37,8 +37,30 @@
 }
 
 //Media Queries Mobile
+//Mobile 320
+@include mobile-device-xs(mobile-xs){
+  .property-list {
+    h1{
+      padding-top: 20px;
+    }
+    .box-con {
+      grid-template-columns: repeat(1, auto);
+      .box {
+        .housePicture {
+          height: 230px;
+          width: 250px;
+        }
+     
+      }
+    }
+  }
+}
+
 //Mobile 480
-@include mobile-device(mobile-md) {
+@include mobile-device-sm(mobile-xsBreak, mobile-md){
+  .properties-container{
+    padding: 20px;
+  }
   .property-list {
     .box-con {
       grid-template-columns: repeat(1, auto);
@@ -47,7 +69,7 @@
 }
 
 //Mobile 481 - 768
-@include mobile-device-sm(mobile-lg, tablet-sm) {
+@include mobile-device-md(mobile-lg, tablet-sm) {
   .property-list {
     .box-con {
       grid-template-columns: repeat(1, auto);
@@ -58,6 +80,9 @@
 //Media Queries Tablet
 //Tablet 768 - 1024
 @include tablet-device-sm(tablet-sm, tablet-md) {
+  .properties-container{
+    padding: 20px;
+  }
   .property-list {
     .box-con {
       grid-template-columns: repeat(1, auto);

@@ -29,8 +29,13 @@
   display: none;
 }
 
+//Mobile 320
+@include mobile-device-xs(mobile-xs){
+  @include responsive-nav;
+}
+
 //Mobile 480
-@include mobile-device(mobile-md) {
+@include mobile-device-sm(mobile-xsBreak, mobile-md) {
   @include responsive-nav;
 }
 

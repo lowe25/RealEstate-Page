@@ -44,10 +44,24 @@
 }
 
 /*Media Queries*/
-/*Media Queries Phone 480*/
-@include mobile-device(mobile-md) {
+/*Media Queries Phone 320*/
+@include mobile-device-xs(mobile-xs){
   .housebox-src {
-    width: 350px;
+    width: 250px;
+  }
+  .form {
+    flex-direction: column;
+    .txt-loc,
+    .txt-price,
+    .btn-search{
+        width: 100%;
+    }
+  }
+}
+/*Media Queries Phone 480*/
+@include mobile-device-sm(mobile-xsBreak, mobile-md) {
+  .housebox-src {
+    width: 270px;
   }
   .form {
     flex-direction: column;
