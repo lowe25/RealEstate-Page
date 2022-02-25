@@ -7,6 +7,8 @@
   align-items: center;
   padding: 20px;
   line-height: 1.6;
+  font-family: $font-OpenSans;
+  font-size: 14px;
   .comp-about {
     display: grid;
     justify-content: center;
@@ -48,6 +50,10 @@
       padding: 10px;
     }
   }
+}
+.rights{
+  font-family: $font-OpenSans;
+  font-size: 14px;
 }
 
 //Mixins
@@ -100,9 +106,6 @@
     height: auto;
     max-height: 9999px;
   }
-  .rights{
-    display: none;
-  }
 }
 
 @mixin responsive-footer-mobile {
@@ -112,8 +115,13 @@
     .comp-about {
       text-align: center;
       justify-content: center;
-      line-height: 1.6;
-      padding: 20px;
+      p{
+        text-align: center;
+        font-size: 15px;
+        width: 340px;
+        line-height: 1.6;
+        padding: 20px;
+      }
     }
   }
 
@@ -127,7 +135,7 @@
     display: flex;
     justify-content: space-between;
     gap: 20px;
-    width: 350px;
+    width: 320px;
     padding: 5px;
     span {
       display: block;
